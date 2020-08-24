@@ -1,0 +1,75 @@
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    @include mDesk {
+        width: 60%;
+    }
+    @include sDesk {
+        width: 70%;
+    }
+    @include tablet {
+        width: 65%;
+        margin-left: 5rem
+    }
+    @include sTablet {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 3.5rem;
+
+         &__personal {
+             @include mMobile {
+                 display: flex;
+                 flex-direction: column;
+             }
+         }
+       
+         &__input {
+             padding: 1rem;
+             margin: .5rem 0;
+             background: #2b2b2b;
+             border: none;
+             font-size: 1.1rem;
+             color: $txtColor;
+             outline: none;
+
+            @include sTablet {
+                padding: 0.5rem;
+            }
+            @include mMobile {
+                width: 21rem;
+            }
+            @include sMobile {
+                width: 17rem;
+            }
+           
+            }
+        
+
+        &__btn {
+            width: 5rem;
+            padding: .7rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: none;
+            border: 2px solid $iconColor;
+            color: $iconColor;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    .error {
+        border: 2px solid $iconColor;
+    }
+}

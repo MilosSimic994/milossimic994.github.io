@@ -1,0 +1,70 @@
+.about {
+
+    width: 100%;
+    &__txt{
+
+        
+        position: absolute;
+        left: 150px;
+        top: 28%;
+
+        @include sDesk {
+            top: 25%;
+            
+        }
+        @include tablet {
+            
+            left: 100px;
+        }
+        @include mMobile {
+            left: 80px;
+            top: 20%;
+        }
+        @include sMobile {
+            left: 50px;
+        }
+        h1 {
+            color: $iconColor;
+            font-size: 6rem;
+            @include sDesk {
+                font-size: 5rem;
+                margin-bottom: 4rem
+            }
+            @include tablet {
+                font-size: $titleTab;
+            }
+            @include mMobile {
+                font-size: $titleMob;
+            }
+        
+        } 
+
+        p{
+            font-size: 1.7rem;
+            width: 55%;
+            margin-top: 1.6rem;
+            color: $txtColor;
+            @include sDesk {
+                width: 70%;
+                margin-top: 1.8rem;
+            }
+            @include tablet {
+                width: 80%;
+            }
+            @include mMobile {
+                width: 90%;
+            }
+            @include sMobile {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    &__img {
+
+         width: 100vw;
+         height: 100vh;
+         background: url('/images/Alone-pana1.png') no-repeat center;
+         background-size: cover;
+
+    }
+}
