@@ -741,6 +741,7 @@ body {
   background: #181818;
   width: 60px;
   height: 100vh;
+  z-index: 10;
 }
 
 @media screen and (max-width: 1024px) {
@@ -811,8 +812,9 @@ body {
     position: absolute;
     left: 0;
     height: 0;
-    background: #181818;
+    background-color: #1d1d1d;
     display: none;
+    z-index: 10;
   }
 }
 
