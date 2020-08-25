@@ -3,6 +3,7 @@ const emailInput = document.getElementById('email');
 const subjectInput = document.getElementById('subject');
 const messageInput = document.getElementById('message')
 const formBtn = document.getElementById('form-btn');
+const container = document.querySelector('.container')
 
 const clients = [];
 
@@ -14,7 +15,7 @@ function validateEmail(email) {
 }
 
 
-const makeClietsList = (e) => {
+const makeClientsList = (e) => {
     e.preventDefault()
 
     if (!validateEmail(emailInput.value)) {
@@ -53,4 +54,21 @@ const makeClietsList = (e) => {
     console.log(clients);
 }
 
-formBtn.addEventListener('click', makeClietsList)
+function error() {
+    container.innerHTML = ''
+    container.innerHTML = `
+    <div class="error-mess">
+    <h2>Sorry this page is not currently in use!</h2> 
+    <p>please contact me here <span>milossimicc@gmail.com</span></p>   
+    </div>
+    `
+}
+// error()
+
+formBtn.addEventListener('click', makeClientsList)
+
+window.addEventListener('DOMContentLoaded', ()=> {
+    setTimeout(error, 1500)
+})
+
+
