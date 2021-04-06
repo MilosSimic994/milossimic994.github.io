@@ -107,11 +107,12 @@
   margin-top: 3rem;
   cursor: pointer;
   outline: none;
+  box-shadow: 0 0 5px #F71CDE;
 }
 
 @media screen and (max-width: 1200px) {
   .title__btn {
-    padding: .8rem 1rem;
+    padding: 0.8rem 1rem;
     font-size: 1rem;
   }
 }
@@ -385,6 +386,7 @@
   text-align: center;
   text-transform: uppercase;
   border: 0.7px solid #959595;
+  box-shadow: 0 0 5px #959595;
 }
 
 @media screen and (max-width: 1200px) {
@@ -747,7 +749,7 @@ a {
 
 body {
   background: #1d1d1d;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 .nav {
@@ -798,7 +800,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .nav__logo {
-    margin: .2rem 0.2rem;
+    margin: 0.2rem 0.2rem;
     padding: 0.5rem;
   }
 }

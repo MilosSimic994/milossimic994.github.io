@@ -1,120 +1,117 @@
 .span-margin {
-    margin-right: 20px;
-    @include sMobile {
-        margin-right: 10px;
-    }
+  margin-right: 20px;
+  @include sMobile {
+    margin-right: 10px;
+  }
 }
 
 .title {
-    position: absolute;
-    left: 180px;
-    top: 27%;
+  position: absolute;
+  left: 180px;
+  top: 27%;
+  @include lDesk {
+    left: 160px;
+  }
+  @include mDesk {
+    top: 32%;
+  }
+  @include sDesk {
+    left: 120px;
+  }
+  @include mMobile {
+    padding-left: 3rem;
+    left: 0;
+  }
+  @include sMobile {
+    left: 0;
+    padding-left: 1.5rem;
+    top: 35%;
+  }
+
+  span {
+    color: white;
+    font-size: 5.5rem;
+    @include xlDesk {
+      font-size: 5rem;
+    }
     @include lDesk {
-        left: 160px;
+      font-size: 4rem;
     }
     @include mDesk {
-        top: 32%;
-    }
-    @include sDesk {
-        left: 120px;
+      font-size: 3rem;
     }
     @include mMobile {
-        padding-left: 3rem;
-        left: 0;
-    };
+      font-size: 2.2rem;
+    }
     @include sMobile {
-        left: 0;
-        padding-left: 1.5rem;
-        top: 35%;
+      font-size: 1.8rem;
     }
-   
-    span {
-        color: white;
-        font-size: 5.5rem;
-       @include xlDesk {
-           font-size: 5rem;
-       }
-       @include lDesk {
-           font-size: 4rem;
-       }
-       @include mDesk {
-           font-size: 3rem;
-       }
-       @include mMobile {
-        font-size: 2.2rem;
+  }
+  span:hover {
+    color: $iconColor;
+  }
+  &__txt {
+    p {
+      color: $txtColor;
+      font-size: 2rem;
+      @include mDesk {
+        font-size: 2rem;
+      }
     }
-       @include sMobile {
-           font-size: 1.8rem;
-       }
-      
+  }
+  &__btn {
+    border: 2px solid $iconColor;
+    background: none;
+    padding: 1rem 2rem;
+    color: $iconColor;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 5px $iconColor;
+    @include sDesk {
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
     }
-    span:hover {
-        color: $iconColor;
-    }
-    &__txt {
-        p {
-            color: $txtColor;
-            font-size: 2rem;
-            @include mDesk {
-                font-size: 2rem;
-            }
-        }
-       
-    }
-    &__btn {
-        border: 2px solid $iconColor;
-        background: none;
-        padding: 1rem 2rem;
-        color: $iconColor;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        margin-top: 3rem;
-        cursor: pointer;
-        outline: none;
-        @include sDesk {
-            padding: .8rem 1rem;
-            font-size: 1rem;;
-        }
-    }
-    &__btn:hover {
-        background: $iconColor;
-        color: $background;
-    }
+  }
+  &__btn:hover {
+    background: $iconColor;
+    color: $background;
+  }
 }
 .coding {
-    img {
-        width: 37rem;
-        height: 37rem;
-        position: absolute;
-        right: 200px;
-        top: 15%;
+  img {
+    width: 37rem;
+    height: 37rem;
+    position: absolute;
+    right: 200px;
+    top: 15%;
 
-        @include xlDesk { 
-            width: 35rem;
-            height: 35rem;
-            right: 150px;
-        }
-        @include lDesk {
-            width: 30rem;
-            height: 30rem;
-            right: 130px;
-            top: 20%;
-        }
-        @include mDesk {
-            width: 27rem;
-            height: 27rem;
-            top: 25%;
-           
-        }
-       @include sDesk {
-            width: 23rem;
-            height: 23rem;
-            right: 100px;
-            top: 28%;
-            
-       }
-       @include tablet {
-           display: none;
-       }
+    @include xlDesk {
+      width: 35rem;
+      height: 35rem;
+      right: 150px;
     }
+    @include lDesk {
+      width: 30rem;
+      height: 30rem;
+      right: 130px;
+      top: 20%;
+    }
+    @include mDesk {
+      width: 27rem;
+      height: 27rem;
+      top: 25%;
+    }
+    @include sDesk {
+      width: 23rem;
+      height: 23rem;
+      right: 100px;
+      top: 28%;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
 }

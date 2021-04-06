@@ -1,98 +1,96 @@
 .skills {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-    margin-left: 150px;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  margin-left: 150px;
 
-    @include mDesk {
-        margin-left: 120px
-    }
+  @include mDesk {
+    margin-left: 120px;
+  }
+  @include sDesk {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include tablet {
+    margin-left: 80px;
+    justify-content: center;
+  }
+  @include mMobile {
+    margin-left: 50px;
+  }
+  @include mMobile {
+    margin-left: 35px;
+  }
+
+  &__txt {
+    width: 65%;
     @include sDesk {
-        flex-direction: column;
-        align-items: flex-start;
+      width: 85%;
+      padding-top: 10rem;
     }
     @include tablet {
-        margin-left: 80px;
-        justify-content: center;
+      width: 90%;
+      padding-top: 7rem;
     }
     @include mMobile {
-        margin-left: 50px;
+      padding-top: 20rem;
+    }
+    h1 {
+      color: $iconColor;
+      font-size: $titleDesk;
+      @include mDesk {
+        font-size: 5rem;
+      }
+      @include tablet {
+        font-size: $titleTab;
+      }
+      @include mMobile {
+        font-size: $titleMob;
+      }
+    }
+
+    p {
+      font-size: 1.7rem;
+      width: 100%;
+      margin-top: 2rem;
+      color: $txtColor;
+      @include mDesk {
+        font-size: 1.5rem;
+      }
+      @include tablet {
+        font-size: 1.3rem;
+      }
+    }
+    a {
+      color: $iconColor;
+      text-decoration: underline;
+    }
+  }
+  &__slide {
+    width: 25%;
+    color: $iconColor;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0.7px solid $txtColor;
+    box-shadow: 0 0 5px $txtColor;
+    @include sDesk {
+      width: 35%;
+    }
+    @include tablet {
+      width: 22rem;
+      margin-top: 5rem;
     }
     @include mMobile {
-        margin-left: 35px;
+      font-size: 2rem;
+      width: 18rem;
+      margin-bottom: 1rem;
     }
-
-    &__txt{
-        width: 65%;
-        @include sDesk {
-            width: 85%;
-            padding-top: 10rem
-        }
-        @include tablet {
-            width: 90%;
-            padding-top: 7rem;
-        }
-        @include mMobile {
-            padding-top: 20rem;
-        }
-        h1 {
-            color: $iconColor;
-            font-size: $titleDesk;
-            @include mDesk {
-                font-size: 5rem;
-            }
-            @include tablet {
-                font-size: $titleTab;
-            }
-            @include mMobile {
-                font-size: $titleMob;
-            }
-        } 
-
-        p{
-            font-size: 1.7rem;
-            width: 100%;
-            margin-top: 2rem;
-            color: $txtColor;
-            @include mDesk {
-                font-size: 1.5rem
-            }
-            @include tablet {
-                font-size: 1.3rem;
-            }    
-        }
-        a {
-            color: $iconColor;
-            text-decoration: underline;
-        }
+    @include sMobile {
+      font-size: 1.3rem;
+      width: 14rem;
+      margin-top: 2rem;
     }
-    &__slide {
-        width: 25%;
-        color: $iconColor;
-        font-size: 3rem;
-        text-align: center;
-        text-transform: uppercase;
-        border: 0.7px solid $txtColor;
-        @include sDesk {
-            width: 35%;
-        }
-        @include tablet {
-            width: 22rem;
-            margin-top: 5rem;
-        }
-        @include mMobile {
-            font-size: 2rem;
-            width: 18rem;
-            margin-bottom: 1rem;
-            
-        }
-        @include sMobile {
-            font-size: 1.3rem;
-            width: 14rem;
-            margin-top: 2rem
-        }
-
-    }
+  }
 }
