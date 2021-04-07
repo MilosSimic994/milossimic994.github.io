@@ -1,0 +1,52 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+//media
+@mixin xlDesk {
+  @media screen and (max-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin lDesk {
+  @media screen and (max-width: 1560px) {
+    @content;
+  }
+}
+
+@mixin mDesk {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin sDesk {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin sTablet {
+  @media screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin mMobile {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+@mixin sMobile {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+} ;

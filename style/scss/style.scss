@@ -1,7 +1,12 @@
-@import "config";
+@import "basic/reset";
+@import "basic/variable";
+@import "basic/typography";
+@import "basic/mixins";
+
 @import "home";
 @import "about";
 @import "skills";
+@import "projects";
 @import "work";
 @import "contact";
 
@@ -16,6 +21,10 @@ a {
 body {
   background: $background;
   font-family: "Raleway";
+}
+main {
+  width: 100%;
+  @include flex(center, center, column);
 }
 .nav {
   position: absolute;
