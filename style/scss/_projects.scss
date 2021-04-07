@@ -1,16 +1,32 @@
 .project-wrapper {
   @include flex(space-evenly, center, column);
   width: 80%;
-  height: 100vh;
+  height: 100%;
+
+  h1 {
+    font-size: $titleDesk;
+  }
 
   .project {
-    @include flex(space-between, center, row);
+    @include flex(space-between, flex-start, row);
     border: 1px solid $iconColor;
     box-shadow: 0 0 5px $iconColor;
+    background-color: #181818;
+    &__image {
+      height: 470px;
+      @include flex(center, center, row);
+      background-color: $background;
+      padding: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
 
     &__description {
-      flex: 0 0 49%;
-
+      padding: 0 30px;
+      flex: 0 0 55%;
       &--title {
         font-size: 3rem;
         text-transform: capitalize;
@@ -38,17 +54,26 @@
         padding: 20px 0;
 
         button {
+          cursor: pointer;
           background-color: $iconColor;
-          border: none;
+          border: 2px solid $iconColor;
           padding: 10px 20px;
           color: $txtColor;
           font-size: 1.2rem;
           margin-right: 15px;
+          &:hover {
+            background-color: transparent;
+            transition: ease-out 1.5s;
+          }
         }
 
         button:first-of-type {
           background-color: $txtColor;
           color: $iconColor;
+          border: 2px solid $txtColor;
+          &:hover {
+            background-color: transparent;
+          }
         }
       }
     }
