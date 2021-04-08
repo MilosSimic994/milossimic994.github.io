@@ -60,7 +60,7 @@
     }
   }
   &__btn {
-    border: 2px solid $iconColor;
+    border: 2px solid $txtColor;
     background: none;
     padding: 1rem 2rem;
     color: $iconColor;
@@ -69,15 +69,19 @@
     margin-top: 3rem;
     cursor: pointer;
     outline: none;
-    box-shadow: 0 0 5px $iconColor;
+    box-shadow: 0 0 5px 5px $txtColor;
+
+    &:hover {
+      background: $iconColor;
+      color: $txtColor;
+      font-weight: bold;
+      box-shadow: none;
+      border: none;
+    }
     @include sDesk {
       padding: 0.8rem 1rem;
       font-size: 1rem;
     }
-  }
-  &__btn:hover {
-    background: $iconColor;
-    color: $background;
   }
 }
 .coding {

@@ -10,8 +10,8 @@
 
   .project {
     @include flex(space-between, flex-start, row);
-    border: 1px solid $iconColor;
-    box-shadow: 0 0 5px 5px $iconColor;
+    border: 1px solid $txtColor;
+    box-shadow: 0 0 5px 5px $txtColor;
     background-color: #181818;
     margin-bottom: 200px;
 
@@ -55,9 +55,10 @@
           padding: 10px 20px;
           background-color: none;
           color: $iconColor;
-          border: 1px solid $iconColor;
+          border: 2px solid $iconColor;
           border-radius: 40px;
           font-size: 1.2rem;
+          letter-spacing: 1.5px;
         }
       }
       &--btn {
@@ -66,24 +67,26 @@
 
         a {
           cursor: pointer;
-          background-color: $iconColor;
           border: 2px solid $iconColor;
-          padding: 10px 20px;
+          padding: 15px 20px;
           color: $txtColor;
-          font-size: 1.2rem;
+          font-size: 1.4rem;
+          letter-spacing: 1px;
+          font-weight: bold;
           margin-right: 15px;
           &:hover {
             background-color: transparent;
-            transition: ease-out 1.5s;
+            transition: ease-out 0.5s;
+            box-shadow: 0 0 5px 5px $iconColor;
           }
         }
 
         a:first-of-type {
-          background-color: $txtColor;
           color: $iconColor;
           border: 2px solid $txtColor;
           &:hover {
             background-color: transparent;
+            box-shadow: 0 0 5px 5px $txtColor;
           }
         }
       }

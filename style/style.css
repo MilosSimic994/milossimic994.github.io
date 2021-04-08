@@ -161,7 +161,7 @@ body {
 }
 
 .title__btn {
-  border: 2px solid #f71cde;
+  border: 2px solid #959595;
   background: none;
   padding: 1rem 2rem;
   color: #f71cde;
@@ -170,7 +170,15 @@ body {
   margin-top: 3rem;
   cursor: pointer;
   outline: none;
-  box-shadow: 0 0 5px #f71cde;
+  box-shadow: 0 0 5px 5px #959595;
+}
+
+.title__btn:hover {
+  background: #f71cde;
+  color: #959595;
+  font-weight: bold;
+  box-shadow: none;
+  border: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -178,11 +186,6 @@ body {
     padding: 0.8rem 1rem;
     font-size: 1rem;
   }
-}
-
-.title__btn:hover {
-  background: #f71cde;
-  color: #1d1d1d;
 }
 
 .coding img {
@@ -334,8 +337,9 @@ body {
 .skills {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 100vh;
+  width: 80%;
   margin-left: 150px;
 }
 
@@ -449,7 +453,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   border: 0.7px solid #959595;
-  box-shadow: 0 0 5px #959595;
+  box-shadow: 0 0 5px 5px #959595;
 }
 
 @media screen and (max-width: 1200px) {
@@ -500,8 +504,8 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
-  border: 1px solid #f71cde;
-  box-shadow: 0 0 5px 5px #f71cde;
+  border: 1px solid #959595;
+  box-shadow: 0 0 5px 5px #959595;
   background-color: #181818;
   margin-bottom: 200px;
 }
@@ -557,9 +561,10 @@ body {
   padding: 10px 20px;
   background-color: none;
   color: #f71cde;
-  border: 1px solid #f71cde;
+  border: 2px solid #f71cde;
   border-radius: 40px;
   font-size: 1.2rem;
+  letter-spacing: 1.5px;
 }
 
 .project-wrapper .project__description--btn {
@@ -569,27 +574,29 @@ body {
 
 .project-wrapper .project__description--btn a {
   cursor: pointer;
-  background-color: #f71cde;
   border: 2px solid #f71cde;
-  padding: 10px 20px;
+  padding: 15px 20px;
   color: #959595;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: bold;
   margin-right: 15px;
 }
 
 .project-wrapper .project__description--btn a:hover {
   background-color: transparent;
-  transition: ease-out 1.5s;
+  transition: ease-out 0.5s;
+  box-shadow: 0 0 5px 5px #f71cde;
 }
 
 .project-wrapper .project__description--btn a:first-of-type {
-  background-color: #959595;
   color: #f71cde;
   border: 2px solid #959595;
 }
 
 .project-wrapper .project__description--btn a:first-of-type:hover {
   background-color: transparent;
+  box-shadow: 0 0 5px 5px #959595;
 }
 
 .show {

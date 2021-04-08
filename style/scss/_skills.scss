@@ -1,8 +1,9 @@
 .skills {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 100vh;
+  width: 80%;
   margin-left: 150px;
 
   @include mDesk {
@@ -74,7 +75,7 @@
     text-align: center;
     text-transform: uppercase;
     border: 0.7px solid $txtColor;
-    box-shadow: 0 0 5px $txtColor;
+    box-shadow: 0 0 5px 5px $txtColor;
     @include sDesk {
       width: 35%;
     }
