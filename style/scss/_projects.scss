@@ -5,6 +5,7 @@
 
   h1 {
     font-size: $titleDesk;
+    margin: 100px 0;
   }
 
   .project {
@@ -12,8 +13,10 @@
     border: 1px solid $iconColor;
     box-shadow: 0 0 5px $iconColor;
     background-color: #181818;
+    margin-bottom: 200px;
     &__image {
       height: 470px;
+      width: 100%;
       @include flex(center, center, row);
       background-color: $background;
       padding: 40px;
@@ -53,7 +56,7 @@
         margin-bottom: 20px;
         padding: 20px 0;
 
-        button {
+        a {
           cursor: pointer;
           background-color: $iconColor;
           border: 2px solid $iconColor;
@@ -67,7 +70,7 @@
           }
         }
 
-        button:first-of-type {
+        a:first-of-type {
           background-color: $txtColor;
           color: $iconColor;
           border: 2px solid $txtColor;

@@ -492,6 +492,7 @@ body {
 
 .project-wrapper h1 {
   font-size: 6rem;
+  margin: 100px 0;
 }
 
 .project-wrapper .project {
@@ -502,10 +503,12 @@ body {
   border: 1px solid #f71cde;
   box-shadow: 0 0 5px #f71cde;
   background-color: #181818;
+  margin-bottom: 200px;
 }
 
 .project-wrapper .project__image {
   height: 470px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -557,7 +560,7 @@ body {
   padding: 20px 0;
 }
 
-.project-wrapper .project__description--btn button {
+.project-wrapper .project__description--btn a {
   cursor: pointer;
   background-color: #f71cde;
   border: 2px solid #f71cde;
@@ -567,18 +570,18 @@ body {
   margin-right: 15px;
 }
 
-.project-wrapper .project__description--btn button:hover {
+.project-wrapper .project__description--btn a:hover {
   background-color: transparent;
   transition: ease-out 1.5s;
 }
 
-.project-wrapper .project__description--btn button:first-of-type {
+.project-wrapper .project__description--btn a:first-of-type {
   background-color: #959595;
   color: #f71cde;
   border: 2px solid #959595;
 }
 
-.project-wrapper .project__description--btn button:first-of-type:hover {
+.project-wrapper .project__description--btn a:first-of-type:hover {
   background-color: transparent;
 }
 
