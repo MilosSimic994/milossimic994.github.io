@@ -4,7 +4,7 @@ const projects = [
   {
     title: "frigo",
     desc:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. Numquam, atque!",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. ",
     tool: ["WordPress", "Themify", "CMS"],
     img: "/images/frigo1.jpg",
     site: "https://frigoservis.rs/",
@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Bambo",
     desc:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. Numquam, atque!",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. ",
     tool: ["JavaScript", "HTML", "CSS"],
     img: "/images/bambo.jpg",
     site: "https://upbeat-shirley-7aed7d.netlify.app/",
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Hemer Veleprodaja",
     desc:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. Numquam, atque!",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. ",
     tool: ["JavaScript", "HTML", "CSS"],
     img: "/images/hemera.png",
     site: "http://vpkucnahemijahemera.rs/",
@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Manage Agency",
     desc:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. Numquam, atque!",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. ",
     tool: ["SCSS", "HTML", "CSS"],
     img: "/images/manage.png",
     site: "https://goofy-minsky-7233db.netlify.app/",
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "Pizza Bar",
     desc:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. Numquam, atque!",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. ",
     tool: ["SCSS", "HTML", "CSS"],
     img: "/images/whats-new-pizza.jpg",
     site: "https://zealous-visvesvaraya-beea78.netlify.app/",

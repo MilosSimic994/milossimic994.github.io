@@ -543,6 +543,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   .project-wrapper .project__image img {
+    width: 90%;
     height: 70%;
   }
 }
