@@ -21,6 +21,17 @@
     @include mDesk {
       height: 400px;
     }
+    @include sDesk {
+      height: 350px;
+    }
+    @include tablet {
+      @include flex(flex-start, flex-start, column);
+      height: 600px;
+      width: 70%;
+    }
+    @include sTablet {
+      width: 80%;
+    }
 
     &__image {
       height: 100%;
@@ -28,6 +39,10 @@
       @include flex(center, center, row);
       background-color: $background;
       padding: 40px;
+      @include tablet {
+        height: 35%;
+        padding: 15px;
+      }
 
       img {
         cursor: pointer;
@@ -38,17 +53,28 @@
           width: 90%;
           height: 70%;
         }
+        @include tablet {
+          height: 90%;
+          width: 70%;
+        }
       }
 
       .resize {
         scale: 1.3;
         transition: ease 1.4s;
+        @include tablet {
+          scale: 1.1;
+        }
       }
     }
 
     &__description {
       padding: 0 30px;
       flex: 0 0 60%;
+      @include sTablet {
+        padding: 0 15px;
+      }
+
       &--title {
         font-size: 3rem;
         text-transform: capitalize;
@@ -59,6 +85,12 @@
         @include mDesk {
           font-size: 2.5rem;
         }
+        @include sDesk {
+          font-size: 2.2rem;
+        }
+        @include tablet {
+          padding-top: 15px;
+        }
       }
       P {
         font-size: 1.5rem;
@@ -68,6 +100,10 @@
         }
         @include mDesk {
           font-size: 1.3rem;
+        }
+        @include sDesk {
+          font-size: 1.15rem;
+          padding: 10px 0;
         }
       }
       &--tools {
@@ -88,6 +124,15 @@
           @include mDesk {
             margin: 15px 15px 15px 0;
           }
+          @include sDesk {
+            margin: 10px 10px 10px 0;
+            padding: 5px 15px;
+            font-size: 1rem;
+            border: 2px solid $iconColor;
+          }
+          @include sTablet {
+            padding: 5px 10px;
+          }
         }
       }
       &--btn {
@@ -107,9 +152,17 @@
             background-color: transparent;
             transition: ease-out 0.5s;
             box-shadow: 0 0 5px 5px $iconColor;
+            @include sDesk {
+              box-shadow: 0 0 3px 3px $iconColor;
+            }
           }
           @include mDesk {
             padding: 10px 20px;
+          }
+          @include sDesk {
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: 2px solid $iconColor;
           }
         }
 
@@ -119,6 +172,9 @@
           &:hover {
             background-color: transparent;
             box-shadow: 0 0 5px 5px $txtColor;
+            @include sDesk {
+              box-shadow: 0 0 3px 3px $txtColor;
+            }
           }
         }
       }
