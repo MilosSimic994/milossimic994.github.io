@@ -541,6 +541,12 @@ body {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 1400px) {
+  .project-wrapper .project__image img {
+    height: 70%;
+  }
+}
+
 .project-wrapper .project__image .resize {
   scale: 1.3;
   transition: ease 1.4s;
@@ -582,7 +588,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   .project-wrapper .project__description P {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
