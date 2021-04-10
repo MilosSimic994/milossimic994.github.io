@@ -508,10 +508,23 @@ body {
   box-shadow: 0 0 5px 5px #959595;
   background-color: #181818;
   margin-bottom: 200px;
+  height: 500px;
+}
+
+@media screen and (max-width: 1700px) {
+  .project-wrapper .project {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .project-wrapper .project {
+    height: 400px;
+  }
 }
 
 .project-wrapper .project__image {
-  height: 470px;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -535,7 +548,7 @@ body {
 
 .project-wrapper .project__description {
   padding: 0 30px;
-  flex: 0 0 55%;
+  flex: 0 0 60%;
 }
 
 .project-wrapper .project__description--title {
@@ -544,9 +557,33 @@ body {
   padding-top: 40px;
 }
 
+@media screen and (max-width: 1700px) {
+  .project-wrapper .project__description--title {
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .project-wrapper .project__description--title {
+    font-size: 2.5rem;
+  }
+}
+
 .project-wrapper .project__description P {
   font-size: 1.5rem;
-  padding: 20px 0;
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 1700px) {
+  .project-wrapper .project__description P {
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .project-wrapper .project__description P {
+    font-size: 1.4rem;
+  }
 }
 
 .project-wrapper .project__description--tools {
@@ -567,6 +604,18 @@ body {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 1700px) {
+  .project-wrapper .project__description--tools li {
+    padding: 8px 20px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .project-wrapper .project__description--tools li {
+    margin: 15px 15px 15px 0;
+  }
+}
+
 .project-wrapper .project__description--btn {
   margin-bottom: 20px;
   padding: 20px 0;
@@ -577,7 +626,7 @@ body {
   border: 2px solid #f71cde;
   padding: 15px 20px;
   color: #959595;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   font-weight: bold;
   margin-right: 15px;
@@ -587,6 +636,12 @@ body {
   background-color: transparent;
   transition: ease-out 0.5s;
   box-shadow: 0 0 5px 5px #f71cde;
+}
+
+@media screen and (max-width: 1400px) {
+  .project-wrapper .project__description--btn a {
+    padding: 10px 20px;
+  }
 }
 
 .project-wrapper .project__description--btn a:first-of-type {

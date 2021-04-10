@@ -51,7 +51,7 @@ const projects = [
 function renderProjects(projects) {
   let displayProjects = projects.map((project) => {
     return `
-        <article class="project">
+      <article class="project">
         <div class="project__image">
             <img src="${project.img}" alt="">
         </div>
@@ -68,7 +68,7 @@ function renderProjects(projects) {
                 <a href="${project.code}"  target="_blank">View Code</a>
             </div> 
         </div>
-    </article>
+      </article>
         `;
   });
 
