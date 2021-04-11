@@ -20,7 +20,7 @@ const projects = [
     code: "https://github.com/MilosSimic994/crowdfunding-product-page",
   },
   {
-    title: "Hemer Veleprodaja",
+    title: "Hemera Veleprodaja",
     desc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. ",
     tool: ["JavaScript", "HTML", "CSS"],
