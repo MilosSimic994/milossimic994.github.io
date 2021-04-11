@@ -32,6 +32,9 @@
     @include sTablet {
       width: 80%;
     }
+    @include mMobile {
+      width: 95%;
+    }
 
     &__image {
       height: 100%;

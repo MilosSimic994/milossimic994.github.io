@@ -546,6 +546,12 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .project-wrapper .project {
+    width: 95%;
+  }
+}
+
 .project-wrapper .project__image {
   height: 100%;
   width: 100%;
