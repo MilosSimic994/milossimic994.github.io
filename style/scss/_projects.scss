@@ -2,10 +2,20 @@
   @include flex(space-evenly, center, column);
   width: 80%;
   height: 100%;
+  @include mMobile {
+    width: 90%;
+  }
 
   h1 {
     font-size: $titleDesk;
     margin: 100px 0;
+
+    @include tablet {
+      font-size: $titleTab;
+    }
+    @include mMobile {
+      font-size: $titleMob;
+    }
   }
 
   .project {
@@ -26,7 +36,7 @@
     }
     @include tablet {
       @include flex(flex-start, flex-start, column);
-      height: 600px;
+      height: 650px;
       width: 70%;
     }
     @include sTablet {
@@ -43,7 +53,7 @@
       background-color: $background;
       padding: 40px;
       @include tablet {
-        height: 35%;
+        height: 40%;
         padding: 15px;
       }
 
@@ -74,8 +84,14 @@
     &__description {
       padding: 0 30px;
       flex: 0 0 60%;
+      @include tablet {
+        padding: 0 45px;
+      }
       @include sTablet {
-        padding: 0 15px;
+        padding: 0 25px;
+      }
+      @include sMobile {
+        padding: 0 10px;
       }
 
       &--title {
@@ -97,6 +113,9 @@
         @include sTablet {
           font-size: 2rem;
         }
+        @include mMobile {
+          font-size: 1.8rem;
+        }
       }
       P {
         font-size: 1.5rem;
@@ -110,6 +129,12 @@
         @include sDesk {
           font-size: 1.15rem;
           padding: 10px 0;
+        }
+        @include tablet {
+          padding-bottom: 25px;
+        }
+        @include mMobile {
+          padding-bottom: 10px;
         }
       }
       &--tools {
@@ -138,6 +163,9 @@
           }
           @include sTablet {
             padding: 5px 10px;
+          }
+          @include mMobile {
+            margin: o;
           }
         }
       }

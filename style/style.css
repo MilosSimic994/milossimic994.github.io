@@ -494,9 +494,27 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .project-wrapper {
+    width: 90%;
+  }
+}
+
 .project-wrapper h1 {
   font-size: 6rem;
   margin: 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .project-wrapper h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-wrapper h1 {
+    font-size: 3rem;
+  }
 }
 
 .project-wrapper .project {
@@ -535,7 +553,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    height: 600px;
+    height: 650px;
     width: 70%;
   }
 }
@@ -565,7 +583,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .project-wrapper .project__image {
-    height: 35%;
+    height: 40%;
     padding: 15px;
   }
 }
@@ -607,9 +625,21 @@ body {
   flex: 0 0 60%;
 }
 
+@media screen and (max-width: 1024px) {
+  .project-wrapper .project__description {
+    padding: 0 45px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .project-wrapper .project__description {
-    padding: 0 15px;
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project-wrapper .project__description {
+    padding: 0 10px;
   }
 }
 
@@ -649,6 +679,12 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .project-wrapper .project__description--title {
+    font-size: 1.8rem;
+  }
+}
+
 .project-wrapper .project__description P {
   font-size: 1.5rem;
   padding: 30px 0;
@@ -670,6 +706,18 @@ body {
   .project-wrapper .project__description P {
     font-size: 1.15rem;
     padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project-wrapper .project__description P {
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-wrapper .project__description P {
+    padding-bottom: 10px;
   }
 }
 
@@ -715,6 +763,12 @@ body {
 @media screen and (max-width: 800px) {
   .project-wrapper .project__description--tools li {
     padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-wrapper .project__description--tools li {
+    margin: o;
   }
 }
 
