@@ -74,7 +74,7 @@ body {
 .title {
   position: absolute;
   left: 180px;
-  top: 27%;
+  top: 25%;
 }
 
 @media screen and (max-width: 1560px) {
@@ -242,8 +242,8 @@ body {
 
 .about__txt {
   position: absolute;
-  left: 150px;
-  top: 28%;
+  left: 180px;
+  top: 25%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -339,8 +339,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
-  width: 80%;
-  margin-left: 150px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -376,7 +375,8 @@ body {
 }
 
 .skills__txt {
-  width: 65%;
+  margin-left: 120px;
+  width: 50%;
 }
 
 @media screen and (max-width: 1200px) {
