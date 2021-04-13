@@ -82,8 +82,10 @@
     }
 
     &__description {
+      @include flex(space-between, flex-start, column);
       padding: 0 30px;
       flex: 0 0 60%;
+      height: 100%;
       @include tablet {
         padding: 0 45px;
       }
@@ -120,6 +122,8 @@
       P {
         font-size: 1.5rem;
         padding: 30px 0;
+        letter-spacing: 1px;
+        height: 55%;
         @include xlDesk {
           padding: 15px 0;
         }

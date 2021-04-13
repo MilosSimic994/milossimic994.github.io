@@ -621,8 +621,13 @@ body {
 }
 
 .project-wrapper .project__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
   padding: 0 30px;
   flex: 0 0 60%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -688,6 +693,8 @@ body {
 .project-wrapper .project__description P {
   font-size: 1.5rem;
   padding: 30px 0;
+  letter-spacing: 1px;
+  height: 55%;
 }
 
 @media screen and (max-width: 1700px) {
