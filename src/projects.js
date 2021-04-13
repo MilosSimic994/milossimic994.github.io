@@ -2,6 +2,15 @@ const projectSection = document.querySelector(".project-wrapper");
 
 const projects = [
   {
+    title: "Todo App",
+    desc:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. ",
+    tool: ["JavaScript", "HTML", "SCSS"],
+    img: "/images/todo.jpg",
+    site: "https://serene-kare-2096e9.netlify.app/",
+    code: "https://github.com/MilosSimic994/to-do-app",
+  },
+  {
     title: "frigo",
     desc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, est corrupti mollitia asperiores, neque debitis saepe alias rerum corporis sit officiis deserunt blanditiis explicabo, provident eius libero. ",
