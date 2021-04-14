@@ -71,45 +71,6 @@ body {
   }
 }
 
-.title {
-  position: absolute;
-  left: 180px;
-  top: 25%;
-}
-
-@media screen and (max-width: 1560px) {
-  .title {
-    left: 160px;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .title {
-    top: 32%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .title {
-    left: 120px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .title {
-    padding-left: 3rem;
-    left: 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .title {
-    left: 0;
-    padding-left: 1.5rem;
-    top: 35%;
-  }
-}
-
 .title span {
   color: white;
   font-size: 5.5rem;
@@ -976,6 +937,14 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
 .nav {

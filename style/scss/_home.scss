@@ -6,28 +6,6 @@
 }
 
 .title {
-  position: absolute;
-  left: 180px;
-  top: 25%;
-  @include lDesk {
-    left: 160px;
-  }
-  @include mDesk {
-    top: 32%;
-  }
-  @include sDesk {
-    left: 120px;
-  }
-  @include mMobile {
-    padding-left: 3rem;
-    left: 0;
-  }
-  @include sMobile {
-    left: 0;
-    padding-left: 1.5rem;
-    top: 35%;
-  }
-
   span {
     color: white;
     font-size: 5.5rem;

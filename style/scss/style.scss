@@ -26,6 +26,11 @@ main {
   width: 100%;
   @include flex(center, center, column);
 }
+
+.container {
+  width: 80%;
+  @include flex(space-between, center, row);
+}
 .nav {
   position: fixed;
   top: 0;
