@@ -197,49 +197,75 @@ body {
   }
 }
 
-.about {
-  width: 100%;
-}
-
-.about__txt {
-  position: absolute;
-  left: 180px;
-  top: 25%;
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .about__txt {
-    top: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .about__txt {
-    left: 100px;
+.about__txt--desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+  .about__txt--desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.about__txt--desc p {
+  flex: 0 0 40%;
+  font-size: 1.7rem;
+  margin-top: 1.6rem;
+  color: #959595;
+}
+
+@media screen and (max-width: 1200px) {
+  .about__txt--desc p {
+    margin-top: 1.8rem;
+    flex: 0 0 45%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about__txt--desc p {
+    flex: 0 0 70%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .about__txt {
-    left: 80px;
-    top: 20%;
+  .about__txt--desc p {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .about__txt {
-    left: 50px;
+  .about__txt--desc p {
+    font-size: 1.3rem;
   }
 }
 
 .about__txt h1 {
   color: #f71cde;
   font-size: 6rem;
+  margin-top: -50px;
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 1200px) {
   .about__txt h1 {
     font-size: 5rem;
+    margin-top: unset;
     margin-bottom: 4rem;
   }
 }
@@ -247,6 +273,7 @@ body {
 @media screen and (max-width: 1024px) {
   .about__txt h1 {
     font-size: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -256,43 +283,15 @@ body {
   }
 }
 
-.about__txt p {
-  font-size: 1.7rem;
-  width: 55%;
-  margin-top: 1.6rem;
-  color: #959595;
-}
-
-@media screen and (max-width: 1200px) {
-  .about__txt p {
-    width: 70%;
-    margin-top: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .about__txt p {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .about__txt p {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .about__txt p {
-    font-size: 1.3rem;
-  }
-}
-
 .about__img {
   width: 100vw;
   height: 100vh;
-  background: url("/images/Alone-pana1.png") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/Alone-pana1.png") no-repeat center;
   background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -4;
 }
 
 .skills {

@@ -1,62 +1,62 @@
 .about {
-  width: 100%;
   &__txt {
-    position: absolute;
-    left: 180px;
-    top: 25%;
-
-    @include sDesk {
-      top: 25%;
-    }
     @include tablet {
-      left: 100px;
+      @include flex(flex-start, center, column);
+      height: 100%;
     }
-    @include mMobile {
-      left: 80px;
-      top: 20%;
-    }
-    @include sMobile {
-      left: 50px;
+    &--desc {
+      @include flex(space-between, flex-start, row);
+      @include sTablet {
+        @include flex(center, center, column);
+      }
+      p {
+        flex: 0 0 40%;
+        font-size: 1.7rem;
+        margin-top: 1.6rem;
+        color: $txtColor;
+        @include sDesk {
+          margin-top: 1.8rem;
+          flex: 0 0 45%;
+        }
+        @include sTablet {
+          flex: 0 0 70%;
+        }
+        @include mMobile {
+          font-size: 1.5rem;
+        }
+        @include sMobile {
+          font-size: 1.3rem;
+        }
+      }
     }
     h1 {
       color: $iconColor;
       font-size: 6rem;
+      margin-top: -50px;
+      margin-bottom: 60px;
       @include sDesk {
         font-size: 5rem;
+        margin-top: unset;
         margin-bottom: 4rem;
       }
       @include tablet {
         font-size: $titleTab;
+        margin-bottom: 2rem;
       }
       @include mMobile {
         font-size: $titleMob;
-      }
-    }
-
-    p {
-      font-size: 1.7rem;
-      width: 55%;
-      margin-top: 1.6rem;
-      color: $txtColor;
-      @include sDesk {
-        width: 70%;
-        margin-top: 1.8rem;
-      }
-      @include tablet {
-        width: 80%;
-      }
-      @include mMobile {
-        width: 90%;
-      }
-      @include sMobile {
-        font-size: 1.3rem;
       }
     }
   }
   &__img {
     width: 100vw;
     height: 100vh;
-    background: url("/images/Alone-pana1.png") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/images/Alone-pana1.png") no-repeat center;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
   }
 }
