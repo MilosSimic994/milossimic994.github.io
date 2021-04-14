@@ -296,66 +296,50 @@ body {
 
 .skills {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-evenly;
   height: 100vh;
   width: 100%;
-}
-
-@media screen and (max-width: 1400px) {
-  .skills {
-    margin-left: 120px;
-  }
+  padding-bottom: 100px;
 }
 
 @media screen and (max-width: 1200px) {
   .skills {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .skills {
-    margin-left: 80px;
+    display: flex;
     justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: unset;
   }
 }
 
 @media screen and (max-width: 600px) {
   .skills {
-    margin-left: 50px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .skills {
-    margin-left: 35px;
+    padding-bottom: 2rem;
   }
 }
 
 .skills__txt {
-  margin-left: 120px;
-  width: 50%;
+  flex: 0 0 70%;
 }
 
-@media screen and (max-width: 1200px) {
-  .skills__txt {
-    width: 85%;
-    padding-top: 10rem;
-  }
+.skills__txt span {
+  color: #70e73b;
+}
+
+.skills__txt h2 {
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 1024px) {
   .skills__txt {
-    width: 90%;
     padding-top: 7rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .skills__txt {
-    padding-top: 20rem;
+    padding-top: 40rem;
   }
 }
 
@@ -364,7 +348,7 @@ body {
   font-size: 6rem;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1560px) {
   .skills__txt h1 {
     font-size: 5rem;
   }
@@ -407,41 +391,33 @@ body {
 }
 
 .skills__slide {
-  width: 25%;
+  flex: 0 0 22%;
   color: #f71cde;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
   border: 0.7px solid #959595;
   box-shadow: 0 0 5px 5px #959595;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .skills__slide {
-    width: 35%;
+    font-size: 2.2rem;
+    flex: 0 0 10%;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .skills__slide {
-    width: 22rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .skills__slide {
-    font-size: 2rem;
-    width: 18rem;
-    margin-bottom: 1rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .skills__slide {
-    font-size: 1.3rem;
-    width: 14rem;
-    margin-top: 2rem;
+    width: 70%;
   }
 }
 
@@ -944,6 +920,12 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
 }
 
 .nav {
