@@ -6,6 +6,7 @@
 }
 
 .title {
+  padding: 30px 0;
   span {
     color: white;
     font-size: 5.5rem;
@@ -54,7 +55,8 @@
       color: $txtColor;
       font-weight: bold;
       box-shadow: none;
-      border: none;
+      border: transparent;
+      margin-top: 52px;
     }
     @include sDesk {
       padding: 0.8rem 1rem;
