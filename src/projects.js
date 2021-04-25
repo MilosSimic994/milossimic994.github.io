@@ -2,13 +2,22 @@ const projectSection = document.querySelector(".project-wrapper");
 
 const projects = [
   {
+    title: "paper, rock, scissors",
+    desc:
+      "Application for creating a todo list in light and dark versions, also allows you to view completed tasks, those that are waiting, also allows you to delete and create a new list.",
+    tool: ["JavaScript", "localStorage", "SCSS"],
+    img: "/images/paperRockSciss.jpg",
+    site: "https://rock-paper-scossors.netlify.app/",
+    code: "https://github.com/MilosSimic994/to-do-app",
+  },
+  {
     title: "Todo App",
     desc:
       "Application for creating a todo list in light and dark versions, also allows you to view completed tasks, those that are waiting, also allows you to delete and create a new list.",
     tool: ["JavaScript", "HTML", "SCSS"],
     img: "/images/todo.jpg",
     site: "https://serene-kare-2096e9.netlify.app/",
-    code: "https://github.com/MilosSimic994/to-do-app",
+    code: "https://github.com/MilosSimic994/Rock-Paper-Scissores",
   },
   {
     title: "frigo",
