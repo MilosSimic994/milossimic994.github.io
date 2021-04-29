@@ -4,7 +4,7 @@ const projects = [
   {
     title: "paper, rock, scissors",
     desc:
-      "Application for creating a todo list in light and dark versions, also allows you to view completed tasks, those that are waiting, also allows you to delete and create a new list.",
+      "Try to beat the computer in this interesting game, if you forgot the rules you can remember in the lower right corner. if you want to take a break and come back with better tactics that's fine because the result will remain the same.",
     tool: ["JavaScript", "localStorage", "SCSS"],
     img: "/images/paperRockSciss.jpg",
     site: "https://rock-paper-scossors.netlify.app/",
