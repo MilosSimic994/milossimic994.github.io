@@ -431,7 +431,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 85%;
   height: 100%;
 }
 
@@ -473,12 +473,13 @@ body {
 @media screen and (max-width: 1700px) {
   .project-wrapper .project {
     height: 450px;
+    padding: inherit 20px;
   }
 }
 
 @media screen and (max-width: 1400px) {
   .project-wrapper .project {
-    height: 400px;
+    height: 420px;
   }
 }
 
@@ -776,11 +777,6 @@ body {
   .project-wrapper .project__description--btn a:first-of-type:hover {
     box-shadow: 0 0 3px 3px #959595;
   }
-}
-
-.show {
-  transition: all 0.9s linear;
-  display: flex;
 }
 
 .container {
