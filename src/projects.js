@@ -7,7 +7,7 @@ const projects = [
       "Try to beat the computer in this interesting game, if you forgot the rules you can remember in the lower right corner. if you want to take a break and come back with better tactics that's fine because the result will remain the same.",
     tool: ["JavaScript", "localStorage", "SCSS"],
     img: "/images/paperRockSciss.jpg",
-    site: "https://rock-paper-scossors.netlify.app/",
+    site: "https://rock-paper-sciss.netlify.app/",
     code: "https://github.com/MilosSimic994/to-do-app",
   },
   {
