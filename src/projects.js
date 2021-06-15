@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "Exchange Rate Calculator",
-    desc: "Try to beat the computer in this interesting game, if you forgot the rules you can remember in the lower right corner. if you want to take a break and come back with better tactics that's fine because the result will remain the same.",
+    desc: "This is an example of a live exchange office where with the help of API we have a relevant view of the exchange rate for the desired currency ",
     tool: ["JavaScript", "localStorage", "SCSS"],
     img: "/images/exchange.png",
     site: "https://exchange-rate-m.netlify.app/",
