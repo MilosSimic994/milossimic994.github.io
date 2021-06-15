@@ -10,7 +10,7 @@ const projects = [
     code: "https://github.com/MilosSimic994/to-do-app",
   },
   {
-    title: "Exchange Rate Calculator",
+    title: "Exchange Calculator",
     desc: "This is an example of a live exchange office where with the help of API we have a relevant view of the exchange rate for the desired currency ",
     tool: ["JavaScript", "localStorage", "SCSS"],
     img: "/images/exchange.png",

@@ -36,8 +36,8 @@
       height: 350px;
     }
     @include tablet {
-      @include flex(flex-start, flex-start, column);
-      height: 650px;
+      @include flex(space-between, flex-start, column);
+      height: 680px;
       width: 70%;
     }
     @include sTablet {
@@ -54,7 +54,7 @@
       background-color: $background;
       padding: 40px;
       @include tablet {
-        height: 40%;
+        height: 30%;
         padding: 15px;
       }
 
@@ -94,6 +94,8 @@
         padding: 0 25px;
       }
       @include sMobile {
+        height: 120%;
+        @include flex(flex-start, flex-start, column);
         padding: 0 10px;
       }
 
@@ -139,7 +141,8 @@
           padding-bottom: 25px;
         }
         @include mMobile {
-          padding-bottom: 10px;
+          padding: 25px 0;
+          line-height: 1.8;
         }
       }
       &--tools {
@@ -170,7 +173,7 @@
             padding: 5px 10px;
           }
           @include mMobile {
-            margin: o;
+            margin: 10px 0;
           }
         }
       }
