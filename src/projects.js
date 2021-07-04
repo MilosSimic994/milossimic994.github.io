@@ -7,7 +7,7 @@ const projects = [
     tool: ["JavaScript", "localStorage", "SCSS"],
     img: "/images/paperRockSciss.jpg",
     site: "https://rock-paper-sciss.netlify.app/",
-    code: "https://github.com/MilosSimic994/to-do-app",
+    code: "https://github.com/MilosSimic994/Rock-Paper-Scissores",
   },
   {
     title: "Exchange Calculator",
@@ -23,7 +23,7 @@ const projects = [
     tool: ["JavaScript", "HTML", "SCSS"],
     img: "/images/todo.jpg",
     site: "https://serene-kare-2096e9.netlify.app/",
-    code: "https://github.com/MilosSimic994/Rock-Paper-Scissores",
+    code: "https://github.com/MilosSimic994/to-do-app",
   },
   {
     title: "frigo",
